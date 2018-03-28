@@ -4,7 +4,6 @@ FROM rtrap/debian:latest
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
     postfix \
-    libsasl \
  && rm -r /var/lib/apt/lists/*
  
 VOLUME ["/etc/postfix"]
